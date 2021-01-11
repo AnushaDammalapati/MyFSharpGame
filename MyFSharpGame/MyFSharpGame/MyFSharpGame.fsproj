@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp2.1\Content\coders_crux.xnb" />
+    <None Include="bin\Debug\netcoreapp2.1\Content\color.xnb" />
+    <None Include="bin\Debug\netcoreapp2.1\Content\cube.xnb" />
+    <None Include="bin\Debug\netcoreapp2.1\Lidgren.Network.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\MonoGame.Framework.Net.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\MyFSharpGame.dll" />
+    <None Include="bin\Debug\netcoreapp2.1\MyFSharpGame.pdb" />
+    <None Include="obj\Debug\netcoreapp2.1\MyFSharpGame.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\MyFSharpGame.assets.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\MyFSharpGame.dll" />
+    <None Include="obj\Debug\netcoreapp2.1\MyFSharpGame.fsproj.CopyComplete" />
+    <None Include="obj\Debug\netcoreapp2.1\MyFSharpGame.fsproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\MyFSharpGame.fsprojAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp2.1\MyFSharpGame.pdb" />
+    <None Include="obj\MyFSharpGame.fsproj.nuget.cache" />
+    <None Include="obj\MyFSharpGame.fsproj.nuget.g.props" />
+    <None Include="obj\MyFSharpGame.fsproj.nuget.g.targets" />
+    <None Include="soft_oal.dll" />
+    <None Include="SDL2.dll" />
+    <Content Include="bin\Debug\netcoreapp2.1\MyFSharpGame.deps.json" />
+    <Content Include="bin\Debug\netcoreapp2.1\MyFSharpGame.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp2.1\MyFSharpGame.runtimeconfig.json" />
+    <Content Include="Content\cube.png" />
+    <Content Include="obj\Debug\netcoreapp2.1\MyFSharpGame.fsproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+    <None Include="Content\coders_crux.spritefont" />
+    <Content Include="Content\coders_crux.ttf" />
+    <None Include="Content\Content.mgcb" />
+    <Content Include="Content\color.png" />
+    <Compile Include="FSharpGame.fs" />
+    <Compile Include="FSharpModel.fs" />
+    <Compile Include="FSharpView.fs" />
+    <Compile Include="FSharpController.fs" />
+    <Compile Include="obj\Debug\netcoreapp2.1\MyFSharpGame.AssemblyInfo.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\DesktopGL\Content\" />
+    <Folder Include="obj\DesktopGL\Content\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework.Net">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
